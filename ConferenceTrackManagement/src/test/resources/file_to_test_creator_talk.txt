@@ -1,0 +1,4 @@
+work with maven 20min
+learning sql 60min
+implements application hadoop 50min
+Rails for Python Developers lightning
