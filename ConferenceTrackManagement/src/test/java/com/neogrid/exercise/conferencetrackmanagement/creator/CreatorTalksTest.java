@@ -28,7 +28,7 @@ public class CreatorTalksTest {
 	public void testFirstTalkIsCorrect() throws Exception {
 		ConverterInTalks creatorTalks = new ConverterInTalks(readerFile);
 		Talk firstTalk = creatorTalks.convert().get(0);
-		assertEquals(firstTalk.getTitle(), "work with maven 20min");
+		assertEquals(firstTalk.getTitle(), "work with maven ");
 		assertEquals(firstTalk.getTime(), 20);
 	}
 	
@@ -36,7 +36,7 @@ public class CreatorTalksTest {
 	public void testSecondTalkIsCorrect() throws Exception {
 		ConverterInTalks creatorTalks = new ConverterInTalks(readerFile);
 		Talk firstTalk = creatorTalks.convert().get(1);
-		assertEquals(firstTalk.getTitle(), "learning sql 60min");
+		assertEquals(firstTalk.getTitle(), "learning sql ");
 		assertEquals(firstTalk.getTime(), 60);
 	}
 	
@@ -44,7 +44,7 @@ public class CreatorTalksTest {
 	public void testThirdTalkIsCorrect() throws Exception {
 		ConverterInTalks creatorTalks = new ConverterInTalks(readerFile);
 		Talk firstTalk = creatorTalks.convert().get(2);
-		assertEquals(firstTalk.getTitle(), "implements application hadoop 50min");
+		assertEquals(firstTalk.getTitle(), "implements application hadoop ");
 		assertEquals(firstTalk.getTime(), 50);
 	}
 	

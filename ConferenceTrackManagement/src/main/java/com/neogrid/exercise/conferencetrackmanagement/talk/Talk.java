@@ -6,9 +6,9 @@ public class Talk implements Comparable<Talk>{
 	private String title;
 	private int time;
 	
-	public Talk(String title, int time) {
+	public Talk(String title, int timeInMinutes) {
 		this.title = title;
-		this.time = time;
+		this.time = timeInMinutes;
 	}
 	
 	public String getTitle() {

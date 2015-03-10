@@ -20,12 +20,16 @@ public class ConverterInTalks {
 		for(String line : reader.getLines()){
 			String lastWord = line.substring(line.lastIndexOf(" ")+1);
 			int time = extractTimeLastWord(lastWord); 
-			Talk talk = new Talk(line, time);
+			Talk talk = new Talk(removeMinutes(line, lastWord), time);
 			talks.add(talk);
 		}
 		return talks;
 	}
 	
+	private String removeMinutes(String line, String lastWord) {
+		return line.replace(lastWord, "");
+	}
+
 	private int extractTimeLastWord(String lastWord) throws Exception{
 		if(lastWord.contains("lightning"))
 			return 5;
