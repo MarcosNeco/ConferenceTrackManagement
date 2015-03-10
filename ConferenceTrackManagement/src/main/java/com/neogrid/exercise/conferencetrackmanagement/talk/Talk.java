@@ -1,4 +1,5 @@
-package com.neogrid.exercise.conferencetrackmanagement.bean;
+package com.neogrid.exercise.conferencetrackmanagement.talk;
+
 
 public class Talk implements Comparable<Talk>{
 	
@@ -24,6 +25,7 @@ public class Talk implements Comparable<Talk>{
 	}
 	
 	public int compareTo(Talk otherTalk) {
-	    return this.time - otherTalk.getTime();
+	    return  otherTalk.getTime() - this.time;
 	}
+
 }

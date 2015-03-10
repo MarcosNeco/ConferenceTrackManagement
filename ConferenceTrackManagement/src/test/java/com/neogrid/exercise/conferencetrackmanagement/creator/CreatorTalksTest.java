@@ -8,10 +8,10 @@ import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.neogrid.exercise.conferencetrackmanagement.bean.Talk;
 import com.neogrid.exercise.conferencetrackmanagement.converter.ConverterInTalks;
 import com.neogrid.exercise.conferencetrackmanagement.reader.Reader;
 import com.neogrid.exercise.conferencetrackmanagement.reader.ReaderFile;
+import com.neogrid.exercise.conferencetrackmanagement.talk.Talk;
 
 public class CreatorTalksTest {
 	 

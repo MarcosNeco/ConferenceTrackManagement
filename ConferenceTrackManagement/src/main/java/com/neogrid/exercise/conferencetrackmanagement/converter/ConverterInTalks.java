@@ -3,8 +3,8 @@ package com.neogrid.exercise.conferencetrackmanagement.converter;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.neogrid.exercise.conferencetrackmanagement.bean.Talk;
 import com.neogrid.exercise.conferencetrackmanagement.reader.Reader;
+import com.neogrid.exercise.conferencetrackmanagement.talk.Talk;
 
 public class ConverterInTalks {
 	
@@ -12,7 +12,7 @@ public class ConverterInTalks {
 	private List<Talk> talks;
 	
 	public ConverterInTalks(Reader reader){
-		this.reader  = reader;
+		this.reader = reader;
 		talks = new ArrayList<Talk>();
 	}
 	
